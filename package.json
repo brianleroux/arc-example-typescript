@@ -5,12 +5,13 @@
   "main": "index.js",
   "scripts": {
     "build": "tsc",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "deploy": "npm run build && npx arc deploy"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "typescript": "^3.6.4"
+    "typescript": "^3.6.4",
+    "@architect/architect": "^6.0.20"
   }
 }
