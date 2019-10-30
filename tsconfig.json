@@ -1,11 +1,14 @@
 {
   "compilerOptions": {
-    "outDir": "./dist",
-    "allowJs": true,
-    		"rootDir": "./",
-    "target": "es5"
+    "target": "esnext",
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "esModuleInterop": true
   },
-  "include": [
-    "./src/**/*"
+  "files": [
+    "./src/http/get-index/index.ts"
+  ],
+  "exclude": [
+    "node_modules"
   ]
 }

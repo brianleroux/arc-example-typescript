@@ -1,17 +1,13 @@
 {
   "name": "arc-example-ts",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
   "scripts": {
-    "build": "tsc",
+    "build": "npx tsc",
+    "start": "npm run build && npx arc sandbox",
     "deploy": "npm run build && npx arc deploy"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "devDependencies": {
+  "dependencies": {
     "typescript": "^3.6.4",
-    "@architect/architect": "^6.0.20"
+    "@architect/architect": "^6.0.21"
   }
 }
